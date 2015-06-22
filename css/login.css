@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 600px;
+	margin: 50px auto;
+}
+
+/*Text Sections Styles*/
+.section {
+	margin: 50px 0;
+}
+
+.section h1 {
+	font: 45px/55px Trebuchet MS, sans-serif;
+	color: #9B9B9B;
+	font-weight: normal;
+}
+
+.section h2 {
+	font: 20px/20px Trebuchet MS, sans-serif;
+	color: #9B9B9B;
+	font-weight: normal;
+}
+
+.section h3 {
+	font: 15px/15px Trebuchet MS, sans-serif;
+	color: #32CD32;
+	font-weight: normal;
+}
+
+.section p {
+	font: 15px/25px Helvetica, sans-serif;
+	color: #4D4D4D;
+}
+
+/*Navigation Styles*/
+#nav a {
+	float: right;
+	font-size: 15px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 28px;
+	padding-top: 10px;
+	-webkit-transition: all 0.5s ease;
+}
+
+#nav a:hover {
+	background: #6fcbf3;
+}
+
+/*Header Styles*/
+#header {
+	margin: 0 auto;
+	height: 120px;
+	width: 1003px;
+}
+
+#header-Bottom {
+	margin: 0;
+	height: 89px;
+	background: url(/images/header_bot_bg.gif) no-repeat;
+	clear: both;
+}
+
+/*Logo Styles*/
+#logoBlock {
+	float: left;
+	width: 255px;
+	padding-left: 135px;
+	padding-top: 10px;
+	height: 79px;
+}
+
+#logoBlock h1 {
+	font-weight: bold;
+	font-family: "Trebuchet MS";
+	color: #fff;
+	font-size: 41px;
+	margin: 0;
+	line-height: 1.0em;
+}
+
+#logoBlock p {
+	margin: 0;
+	color: #777777;
+	font-family: "Trebuchet MS";
+	line-height: 1em;
+	font-size: 18px;
+	margin-left: 64px;
+	font-style: italic;
+}
+
+/*Layout Style */
+body {
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #3e3e3e;
+	background-color: #000000;
+	background-image: url(../images/bg.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+#main {
+	margin: 0 auto;
+	padding-top: 6px;
+	margin-bottom: 0;
+}
+
+#mainCont {
+	margin: 0 auto;
+	width: 1003px;
+	height: 655px;
+}
+
+#leftPane {
+	float: left;
+	width: 650px;
+}
+
+#rightPane {
+	margin-top: 50px;
+	float: right;
+	width: 300px;
+}
+
+/*Login Styles*/
+#loginBox {
+	margin: 0;
+	border-left: solid 2px #40434A;
+	border-right: solid 2px #40434A;
+	height: 200px;
+	width: 296px;
+}
+
+input[type="email"], input[type="password"] {
+	margin-left: 12px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 240px;
+	background: #606060;
+	border: 1px solid #ccc;
+	padding: 4%;
+	font-family: 'Open Sans' sans-serif;
+	font-size: 18px;
+	color: #9B9B9B;
+}
+
+input[type="submit"] {
+	margin-left: 35px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 90px;
+	background: #282828;
+	border: 0;
+	padding: 4%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 130%;
+	color: #9B9B9B;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #606060;
+}

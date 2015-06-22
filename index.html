@@ -1,0 +1,115 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>SRH Radio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link href="css/login.css" rel="stylesheet" type="text/css" />
+	<link href="css/mainpage.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+	</head>
+	<script>
+		function noBack()
+			 {
+				 window.history.forward()
+			 }
+			noBack();
+			window.onload = noBack;
+			window.onpageshow = function(evt) { if (evt.persisted) noBack() }
+			window.onunload = function() { void (0) }
+	</script>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="menu">
+					<div id="nav">
+						<a href="#logout">LOGOUT</a>
+						<a href="#aboutus">ABOUT US</a>
+						<a href="#home">HOME</a>
+					</div>
+					<div id="header-Bottom">
+						<div id="logoBlock">
+							<h1>SRH Radio</h1>
+							<p>
+								<font color="#66cc00">music...info...social</font color>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mainCont">
+
+				<img src="images/srhMain.jpg" width="1000" height="220" border="0"
+					alt="" />
+					
+				<!-- Left Pane starts -->
+				<div id="leftPane">
+					<div class="section">
+						<h1>
+							<a name="home">HOME</a>
+						</h1>
+						<p align="justify">"Our university stands for modern equipment in lecture halls and laboratories. Innovative learning methods, 
+						case studies, management exercises, international networks and a focus on "soft skills" 
+						contribute to your seamless transition into the working world"...quoted from Hochschule-Heidelberg.de,
+						this app is aimed at giving everyone a chance to get to know their city and college better at the same time also giving all its users lots to 
+						learn with all our educational and informative podcasts or a chacne to just kick back and relax and listen to some music/entertainment podcasts,
+						easily available and developed merely for the enjoyment of the SRH community.
+						</p>
+						<br>
+						<br>
+						<h2>SRH RADIO PODCASTS:</h2>
+						<br>
+						<h3>SRH Radio Education</h3>
+						<p align="justify">Under this podcast listener can get education related talks
+							and information under IT, IBE & INFORMATIC departments</p>
+						<br>
+						<h3>SRH Radio Sports</h3>
+						<p align="justify">Under this podcast listener can get information and talks in
+							differents such as FOOTBALL,FORMULA 1 & CRICKET</p>
+						<br>
+						<h3>SRH Radio Music</h3>
+						<p align="justify">Under this podcast listener can relish variety of music such
+							as POP , ROCK, JAZZ</p>
+						<br>
+						<h3>SRH Radio career</h3>
+						<p align="justify">Under this podcast listener can get information related to
+							CV'S , COMPANIES & JOB FARES to for building there career.</p>
+						<br>
+						<h3>SRH Radio Fitness</h3>
+						<p align="justify">Under this podcast listener can get information related to
+							fitness and Healthy Life</p>
+						<br>
+
+
+					</div>
+
+					<div class="section">
+						<h1>
+							<a name="aboutus">ABOUT US</a>
+						</h1>
+						<p align="justify">SRH Radio is a new and easy streaming podcast service enabling all of SRH listen to and share podcasts, 
+						With a varied category of podcasts,ranging from sports to health to music,our motto is simple - play what you want, when you want.
+						Best of all, SRH Radio is available on mobile, tablet, and the web.Listen to the latest podcasts from our college radio anywhere and at 
+						anytime.</p>
+						</div>
+				</div>
+
+				<!--right pane starts -->
+				<div id="rightPane">
+					<div id="playListTop">
+						<h3>LOG IN</h3>
+					</div>
+					<div id="loginBox">
+						<input id="userEmail" type="email" placeholder="Email" />
+						<input id="userPassword" type="password" placeholder="Password" />
+						<input id="logIn" type="submit"
+							onclick="validateUser(document.getElementById('userEmail').value,document.getElementById('userPassword').value)"
+							value="Log In" />
+						<input id="logIn" type="submit" onclick="ClearFields();" value="Cancel"/>
+					</div>
+					<div id="playListBot"></div>
+
+				</div>
+			</div>
+		</div>
+	</html>
