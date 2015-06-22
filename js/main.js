@@ -8,7 +8,7 @@
 	function backToIni(){
 		sessionStorage.clear(); 
 		window.history.forward();
-		window.location.assign("login.html");
+		window.location.assign("index.html");
 	}
 
 	function downloadFunc()
